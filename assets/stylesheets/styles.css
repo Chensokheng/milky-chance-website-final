@@ -248,3 +248,140 @@ td a:hover {
 .date{
   background: red;
 }
+
+.container-music-1, .container-music-2{
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin-left: 140px;
+  margin-right: 100px;
+  margin-top: 300px;
+  width: 80%;
+  height: 700px;
+}
+
+.container-music-2{
+  margin-top: 50px;
+}
+
+.music-1, .music-2{
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  top: 57%;
+  left: 13%;
+}
+
+.music-2{
+  position: absolute;
+  top: 157%;
+
+}
+
+h2{
+  display: inline-block;
+  position: absolute;
+  left: 37%;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.blossom-album{
+  top: 54%;
+}
+.sadnecessary-album{
+  top: 154%;
+}
+
+.album-info-1, .album-info-2{
+  display: inline-block;
+  position: absolute;
+  left: 63%;
+  list-style: none;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.album-info-1{
+  top: 62%;
+}
+
+.album-info-2{
+  top: 162%;
+}
+
+.vl-1, .vl-2{
+  position: absolute;
+  border-left: 3px solid #ffffff;
+  height: 250px;
+  left: 63%;
+}
+
+.vl-1{
+  top: 58%;
+}
+
+.vl-2{
+  top: 158%;
+}
+
+.hl-1, .hl-2{
+  position: absolute;
+  left: 13%;
+  border-top: 3px solid #ffffff;
+  width: 75%;
+}
+
+.hl-1{
+  top: 95%;
+}
+
+.hl-2{
+  top: 195%;
+}
+
+.blossom-songs-1, .blossom-songs-2, .sadnecessary-songs-1, .sadnecessary-songs-2{
+  display: inline-block;
+  position: absolute;
+  list-style: none;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  padding-top: 25px;
+}
+
+.blossom-songs-1{
+  top: 100%;
+  left: 13%;
+}
+
+.blossom-songs-2{
+  top: 100%;
+  left: 50%;
+}
+
+.sadnecessary-songs-1{
+  top: 200%;
+  left: 13%;
+}
+
+.sadnecessary-songs-2{
+  top: 200%;
+  left: 50%;
+}
+.spotify-1{
+position: absolute;
+top: 75%;
+left: 37%;
+}
+
+.spotify-2{
+  position: absolute;
+  top: 175%;
+  left: 37%;
+}
