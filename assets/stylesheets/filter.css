@@ -53,6 +53,11 @@
   color: red;
 }
 
+.btn:focus{
+  background-color: red;
+  color: #ffffff;
+}
+
 /*.btn.active{
 background: red;
 color: #000000;
