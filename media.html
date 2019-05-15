@@ -2,12 +2,13 @@
 <hmtl lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milky Chance</title>
+    <link rel="stylesheet" href="./assets/stylesheets/media-gallery.css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="./assets/stylesheets/" />
+  <link rel="stylesheet" href="./assets/stylesheets/media-bg.css" />
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
-  <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/stylesheets/bootstrap-cdn.css" />-->
@@ -49,35 +50,138 @@
       </nav>
     </div>
 
-<main>
-  <div class="container">
+<div class="wrapper-media">
+  <main>
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img src="./assets/images/lightbox/media-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-5.png" onclick="openModal();currentSlide(5)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" style="height:200px;">
+        </div>
+        <div class="column">
+          <img src="./assets/images/lightbox/media-8.png" onclick="openModal();currentSlide(8)" class="hover-shadow" style="height:200px;">
+        </div>
+      </div>
 
-    <a href="./assets/images/milky-chance-green.png" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-green.png"/></a>
-    <a href="./assets/images/milky-chance-about-1.jpg" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-about-1.jpg"/></a>
-    <a href="./assets/images/milky-chance-black-white-1.jpg" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-black-white-1.jpg"/></a>
-    <a href="./assets/images/milky-chance-before-concert.png" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-before-concert.png"/></a>
-    <a href="./assets/images/milky-chance-concert-1.jpg" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-concert-1.jpg"/></a>
-    <a href="./assets/images/milky-chance-concert-2.jpg" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-concert-2.jpg"/></a>
-    <a href="./assets/images/milky-chance-concert-3.jpg" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-concert-3.jpg"/></a>
-    <a href="./assets/images/milky-chance-concert-4.jpg" data-lightbox="milky-chance" data-title="Milky Chance">
-      <img src="./assets/images/milky-chance-concert-4.jpg"/></a>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/iX-QaNzd-0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/r8BsuT0PWdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KEaslWvWHEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5xtm0iRTWEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <section class="videos-media-page">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ernVvrYH9vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-media-1"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KEaslWvWHEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-media-1"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y9qZ_hMhQc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-media-1"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cdxpMgd-Z44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-media-1"></iframe>
+      </section>
 
-  </div>
-</main>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="./assets/images/lightbox/media-1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="./assets/images/lightbox/media-2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="./assets/images/lightbox/media-3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="./assets/images/lightbox/media-4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="./assets/images/lightbox/media-5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="./assets/images/lightbox/media-6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="./assets/images/lightbox/media-7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="./assets/images/lightbox/media-8.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </main>
+</div>
 
 <script src="./assets/javascripts/jquery.js"></script>
 <script src="./assets/javascripts/lightbox.min.js"></script>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-  </body>
-  </html>
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+</html>

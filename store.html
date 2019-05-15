@@ -2,10 +2,12 @@
 <hmtl lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milky Chance</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="./assets/stylesheets/tour-bg.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/filter.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/store-bg.css" />
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
   <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -48,3 +50,104 @@
         </ul>
       </nav>
     </div>
+
+    <!-- Control buttons -->
+    <div class="button-bar">
+      <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+      <button class="btn" onclick="filterSelection('topwear')"> TOPWEAR</button>
+      <button class="btn" onclick="filterSelection('headwear')"> HEADWEAR</button>
+      <button class="btn" onclick="filterSelection('accesories')"> ACCESORIES</button>
+    </div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+
+<div class="filterDiv topwear">
+  <img src="./assets/images/store/shirt-1.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv topwear">
+  <img src="./assets/images/store/shirt-2.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv topwear">
+  <img src="./assets/images/store/shirt-3.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv topwear">
+  <img src="./assets/images/store/shirt-4.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv topwear">
+  <img src="./assets/images/store/shirt-5.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv topwear">
+  <img src="./assets/images/store/hoodie-1.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv accesories">
+  <img src="./assets/images/store/harmonica-1.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv headwear">
+  <img src="./assets/images/store/hat-1.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv headwear">
+  <img src="./assets/images/store/hat-2.png" height="200px" width="auto">
+</div>
+
+<div class="filterDiv headwear">
+  <img src="./assets/images/store/hat-3.png" height="200px" width="auto">
+</div>
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+var x, i;
+x = document.getElementsByClassName("filterDiv");
+if (c == "all") c = "";
+for (i = 0; i < x.length; i++) {
+w3RemoveClass(x[i], "show");
+if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+}
+}
+
+function w3AddClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+}
+}
+
+function w3RemoveClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+while (arr1.indexOf(arr2[i]) > -1) {
+  arr1.splice(arr1.indexOf(arr2[i]), 1);
+}
+}
+element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function(){
+var current = document.getElementsByClassName("active");
+current[0].className = current[0].className.replace(" active", "");
+this.className += " active";
+});
+}
+</script>
+
+</body>
+</html>
