@@ -9,3 +9,14 @@ openMenu.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     sideMenu.style.width = "0%";
 })
+
+// display the video
+const video = document.querySelector("video");
+
+window.onload = async function () {
+    try {
+        await video.play()
+    } catch{
+        video.play();
+    }
+}  
