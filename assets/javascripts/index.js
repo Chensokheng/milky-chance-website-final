@@ -22,9 +22,5 @@ closeBtn.addEventListener("click", () => {
 
 })
 
-// display the video
-const video = document.querySelector("video");
 
-window.onload = function () {
-    video.play()
-}  
+ 
